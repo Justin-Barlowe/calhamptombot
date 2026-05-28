@@ -23,7 +23,7 @@ module.exports = {
 
       const dayWord = days === 1 ? 'day' : 'days';
 
-      await interaction.reply({ content: `There are ${days} ${dayWord} until November 19, 2026.`, ephemeral: false });
+      await interaction.reply({ content: `GTA VI releases in ${days} ${dayWord}.`, ephemeral: false });
     } catch (err) {
       console.error('Error in countdown command:', err);
       await interaction.reply({ content: 'Something went wrong calculating the countdown.', ephemeral: true });
